@@ -2,13 +2,17 @@ package com.michael.xmlwriteandread;
 
 
 public class PersonBean {
+    public  static final String[] MSG = {"name","age","sex","tel","address"};
     public  String name = null;
     public  int    age  = 0;
     public  String sex  = null;
     public  String tel  = null;
     public  String address = null;
 
-    public PersonBean(String name, int age, String tel, String sex, String address) {
+    public PersonBean() {
+    }
+
+    public PersonBean(String name, int age, String sex, String tel, String address) {
         this.name = name;
         this.age = age;
         this.tel = tel;
